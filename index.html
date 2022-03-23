@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <!-- master css -->
+    <link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+    <!-- nav start -->
+    <nav class="mainNav">
+        <div class="container">
+            <div class="d-flex align-items-center">
+                <div class="logo">
+                    <a href="">
+                        <img src="https://via.placeholder.com/50x50?text=Logo" alt="">
+                    </a>
+                </div>
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- nav end -->
+
+    <!-- layout start -->
+    <main class="layout">
+        <div class="homepage">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h4>Full-Stack Web Developer</h4>
+                        <h1>Ubaidur Rahman Apu</h1>
+                        <ul class="social">
+                            <li><a href=""><i class="ion-social-facebook"></i></a></li>
+                            <li><a href=""><i class="ion-social-linkedin"></i></a></li>
+                            <li><a href=""><i class="ion-social-github"></i></a></li>
+                            <li><a href=""><i class="ion-ios-email"></i></a></li>
+                        </ul>
+                        <a href="" class="about_btn">About me</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="swiper homeSlider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="https://ubaidurrahmanapu.github.io/me/images/portfolio/my_project/restaurant.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://ubaidurrahmanapu.github.io/me/images/portfolio/my_project/corporate.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://ubaidurrahmanapu.github.io/me/images/portfolio/my_project/agro.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://ubaidurrahmanapu.github.io/me/images/portfolio/my_project/transport.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://ubaidurrahmanapu.github.io/me/images/portfolio/my_project/studio.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://ubaidurrahmanapu.github.io/me/images/portfolio/my_project/sports.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://ubaidurrahmanapu.github.io/me/images/portfolio/my_project/spa.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://ubaidurrahmanapu.github.io/me/images/portfolio/my_project/e-commerce.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://ubaidurrahmanapu.github.io/me/images/portfolio/my_project/aircon.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://ubaidurrahmanapu.github.io/me/images/portfolio/my_project/hotel.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://ubaidurrahmanapu.github.io/me/images/portfolio/my_project/interior.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://ubaidurrahmanapu.github.io/me/images/portfolio/my_project/me.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- layout end -->
+
+    <!-- bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const homeSlider = new Swiper('.homeSlider', {
+            // Optional parameters
+            effect: "cards",
+            grabCursor: true,
+            initialSlide : 6,
+        });
+    </script>
+</body>
+</html>

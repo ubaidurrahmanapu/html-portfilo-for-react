@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.0/css/ionicons.min.css");
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: url(../../images/background.jpg);
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+/* nav style start */
+.mainNav {
+  background: #343a40;
+  padding: 5px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+.mainNav .logo {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #83A1CD;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.mainNav .logo img {
+  width: 100%;
+  height: 100%;
+}
+.mainNav ul li {
+  display: inline-block;
+  margin-left: 7px;
+}
+.mainNav ul li a {
+  text-decoration: none;
+  padding: 5px;
+  color: #cccccc;
+}
+.mainNav ul li a.active {
+  color: #ffffff;
+}
+
+/* nav style end */
+/* layout style start */
+.layout {
+  margin-top: 60px;
+}
+
+/* layout style end */
+/* social style start */
+.social {
+  margin-bottom: 1rem;
+}
+.social li {
+  display: inline-block;
+}
+.social li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background: #343a40;
+  color: #ffffff;
+  font-size: 25px;
+  line-height: 1;
+  border-radius: 30%;
+  transition: all 0.2s;
+}
+.social li a:hover {
+  transform: translateY(-3px);
+}
+
+/* social style end */
+/* homepage style start */
+.homepage {
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  min-height: calc(100vh - 60px);
+  overflow: hidden;
+}
+.homepage .about_btn {
+  background: #343a40;
+  color: #ffffff;
+  display: inline-block;
+  padding: 7px 15px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.4s;
+}
+.homepage .about_btn:hover {
+  transform: translateX(5px);
+}
+.homepage .homeSlider .swiper-slide {
+  border-radius: 18px;
+}
+.homepage .homeSlider .swiper-slide img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 992px) {
+  .homepage .homeSlider {
+    margin-top: 50px;
+  }
+}
+/* homepage style end */
+
+/*# sourceMappingURL=master.css.map */
