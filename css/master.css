@@ -60,6 +60,35 @@ ul {
 }
 
 /* layout style end */
+/* pageHeading style start */
+.pageHeading {
+  padding: 50px 0;
+}
+.pageHeading h1 {
+  color: #343a40;
+  font-size: 4rem;
+  font-weight: 500;
+  position: relative;
+}
+.pageHeading h1::first-letter {
+  color: #83A1CD;
+  font-size: 4rem;
+}
+.pageHeading h1 span {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  bottom: 0;
+  font-size: 6rem;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(52, 58, 64, 0.2);
+}
+.pageHeading p {
+  font-weight: 300;
+}
+
+/* pageHeading style end */
 /* social style start */
 .social {
   margin-bottom: 1rem;
@@ -119,5 +148,76 @@ ul {
   }
 }
 /* homepage style end */
+/* aboutArea style start */
+.aboutArea {
+  padding-bottom: 50px;
+}
+.aboutArea .image {
+  margin-bottom: 30px;
+}
+.aboutArea .image img {
+  width: 100%;
+  border-radius: 12px;
+}
+.aboutArea .description .name {
+  font-weight: 600;
+  color: #343a40;
+}
+.aboutArea .description .designation {
+  font-weight: 600;
+}
+.aboutArea .description .designation a {
+  text-decoration: none;
+}
+.aboutArea .description .designation a:hover {
+  text-decoration: underline;
+}
+
+/* aboutArea style end */
+/* skillArea style start */
+.bg_spacing {
+  height: 45px;
+  background-image: linear-gradient(#fff, #efefef);
+}
+
+.skillArea {
+  background: url(../images/skill_bg.png);
+  padding: 50px 0;
+}
+.skillArea .heading {
+  padding-bottom: 30px;
+}
+.skillArea .heading h2 {
+  border-bottom: 1px solid rgba(52, 58, 64, 0.15);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  color: #343a40;
+}
+.skillArea .skillContent h4 {
+  color: #343a40;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(52, 58, 64, 0.15);
+  padding-bottom: 1rem;
+}
+.skillArea .skillContent .skillItem {
+  background-color: #ffffff;
+  transition: all 0.4s ease;
+  min-height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.skillArea .skillContent .skillItem:hover {
+  box-shadow: 0 42px 60px 0 rgba(0, 0, 0, 0.15);
+  transform: translate3d(0, -10px, 0);
+}
+.skillArea .skillContent .skillItem span {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+/* skillArea style end */
 
 /*# sourceMappingURL=master.css.map */
