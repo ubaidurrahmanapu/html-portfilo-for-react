@@ -219,5 +219,147 @@ ul {
 }
 
 /* skillArea style end */
+/* portfolio style start */
+.portfolio .portfolioItem {
+  position: relative;
+  height: 265px;
+  display: block;
+  margin-bottom: 1.5rem;
+  border-radius: 18px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.portfolio .portfolioItem::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(52, 58, 64, 0.15);
+  z-index: 1;
+  transition: all 0.5s;
+}
+.portfolio .portfolioItem:hover::after {
+  background: rgba(52, 58, 64, 0.5);
+}
+.portfolio .portfolioItem:hover .textArea {
+  bottom: 30%;
+}
+.portfolio .portfolioItem .image {
+  height: 100%;
+  width: 100%;
+}
+.portfolio .portfolioItem .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+  object-position: top;
+}
+.portfolio .portfolioItem .textArea {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  max-width: calc(100% - 40px);
+  background: rgba(52, 58, 64, 0.5);
+  border-radius: 12px;
+  padding: 5px 10px;
+  color: #ffffff;
+  z-index: 2;
+  transition: all 0.4s;
+}
+.portfolio .portfolioItem .textArea h6 {
+  margin-bottom: 5px;
+}
+.portfolio .portfolioItem .textArea p {
+  font-size: 12px;
+  margin: 0;
+}
+
+/* portfolio style end */
+/* contact start */
+.contactDetails .item {
+  display: flex;
+  margin-bottom: 15px;
+}
+.contactDetails .item .icon {
+  margin-right: 15px;
+  flex-shrink: 0;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgba(52, 58, 64, 0.5);
+  border-radius: 10px;
+  color: #343a40;
+}
+.contactDetails .item .icon i {
+  font-size: 25px;
+}
+.contactDetails .item h6 {
+  color: black;
+  margin-top: 3px;
+}
+.contactDetails .item h6 a {
+  color: black;
+  text-decoration: none;
+  transition: all 0.1s;
+}
+.contactDetails .item h6 a:hover {
+  color: #343a40;
+}
+.contactDetails .item p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #4b545c;
+}
+
+.contactForm h4 {
+  color: #343a40;
+  margin-bottom: 20px;
+}
+.contactForm label {
+  margin-bottom: 8px;
+  color: black;
+  font-weight: 500;
+}
+.contactForm input {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #88939e;
+  font-size: 14px;
+  padding-bottom: 3px;
+  background: transparent;
+}
+.contactForm input:-webkit-autofill, .contactForm input:-webkit-autofill:hover, .contactForm input:-webkit-autofill:focus, .contactForm input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+}
+.contactForm textarea {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #88939e;
+  font-size: 14px;
+  padding-bottom: 3px;
+  background: transparent;
+}
+.contactForm button {
+  display: inline-block;
+  padding: 0.4em 1.8em;
+  border-radius: 30px;
+  border: 1px solid #7a8793;
+  color: #4b545c;
+  transition: all 0.2s;
+  background: none;
+}
+.contactForm button:hover {
+  color: #7a8793;
+}
+
+/* contact end */
 
 /*# sourceMappingURL=master.css.map */

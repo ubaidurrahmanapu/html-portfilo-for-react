@@ -221,3 +221,157 @@
     }
 }
 /* skillArea style end */
+
+/* portfolio style start */
+.portfolio {
+    .portfolioItem {
+        position: relative;
+        height: 265px;
+        display: block;
+        margin-bottom: 1.5rem;
+        border-radius: 18px;
+        overflow: hidden;
+        cursor: pointer;
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba($black, .15);
+            z-index: 1;
+            transition: all .5s;
+        }
+        &:hover {
+            &::after {
+                background: rgba($black, .5);
+            }
+            .textArea {
+                bottom: 30%;
+            }
+        }
+        .image {
+            height: 100%;
+            width: 100%;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: fill;
+                object-position: top;
+            }
+        }
+        .textArea {
+            position: absolute;
+            left: 20px;
+            bottom: 20px;
+            max-width: calc(100% - 40px);
+            background: rgba($black, .5);
+            border-radius: 12px;
+            padding: 5px 10px;
+            color: $white;
+            z-index: 2;
+            transition: all .4s;
+            h6 {
+                margin-bottom: 5px;
+            }
+            p {
+                font-size: 12px;
+                margin: 0;
+            }
+        }
+    }
+}
+/* portfolio style end */
+
+
+/* contact start */
+.contactDetails {
+    .item {
+        display: flex;
+        margin-bottom: 15px;
+        .icon {
+            margin-right: 15px;
+            flex-shrink: 0;
+            height: 40px;
+            width: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid rgba($black, .5);
+            border-radius: 10px;
+            color: $black;
+            i {
+                font-size: 25px;
+            }
+        }
+        h6 {
+            color: darken($black, 50%);
+            margin-top: 3px;
+            a {
+                color: darken($black, 50%);
+                text-decoration: none;
+                transition: all .1s;
+                &:hover {
+                    color: $black;
+                }
+            }
+        }
+        p {
+            font-size: 14px;
+            font-weight: 300;
+            color: lighten($black, 10%);
+        }
+    }
+}
+.contactForm {
+    h4 {
+        color: $black;
+        margin-bottom: 20px;
+    }
+    label {
+        margin-bottom: 8px;
+        color: darken($black, 50%);
+        font-weight: 500;
+    }
+    input {
+        display: block;
+        width: 100%;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid lighten($black, 35%);
+        font-size: 14px;
+        padding-bottom: 3px;
+        background: transparent;
+        &:-webkit-autofill,
+        &:-webkit-autofill:hover,
+        &:-webkit-autofill:focus,
+        &:-webkit-autofill:active {
+            transition: background-color 5000s ease-in-out 0s;
+            // -webkit-text-fill-color: #fff !important;
+        }
+    }
+    textarea {
+        display: block;
+        width: 100%;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid lighten($black, 35%);
+        font-size: 14px;
+        padding-bottom: 3px;
+        background: transparent;
+    }
+    button {
+        display: inline-block;
+        padding: .4em 1.8em;
+        border-radius: 30px;
+        border: 1px solid lighten($black, 30%);
+        color: lighten($black, 10%);
+        transition: all .2s;
+        background: none;
+        &:hover {
+            color: lighten($black, 30%);
+        }
+    }
+}
+/* contact end */
