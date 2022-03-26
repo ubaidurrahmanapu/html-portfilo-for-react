@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <!-- master css -->
+    <link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+    <!-- nav start -->
+    <nav class="mainNav">
+        <div class="container">
+            <div class="d-flex align-items-center">
+                <div class="logo">
+                    <a href="">
+                        <img src="https://via.placeholder.com/50x50?text=Logo" alt="">
+                    </a>
+                </div>
+                <ul>
+                    <li><a href="" class="active">About</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- nav end -->
+
+
+    <!-- layout start -->
+    <main class="layout">
+        <!-- portfolioHeading start -->
+        <section class="portfolioHeading">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h1>Papyras.com Website</h1>
+                        <p>The new standard in blogging and generating leads.</p>
+                        <a href="">
+                            <img src="images/back.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- portfolioHeading end -->
+
+        <!-- portfolioSingle start -->
+        <section class="portfolioSingle pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <!-- Slider main container -->
+                        <div class="swiper portfolioSlider">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <img src="https://via.placeholder.com/730x550?text=portfolio" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://via.placeholder.com/730x550?text=portfolio" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://via.placeholder.com/730x550?text=portfolio" alt="">
+                                </div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="project_details">
+                            <div class="description">
+                                <h5>Project Description</h5>
+                                <p>I acted as a Backend Developer and chief technology officer of Papyras.</p>
+                                <h6>Project URL: <a href="">https://www.papyras.com/</a></h6>
+                                <h6>Published Date: <span>09 Nov 2021</span></h6>
+                            </div>
+                            <div class="technology">
+                                <h6>Framework</h6>
+                                <span>Laravel</span>
+                                <span>Vue.js</span>
+                            </div>
+                            <div class="technology">
+                                <h6>Tools</h6>
+                                <span>Google Analytics</span>
+                                <span>Git</span>
+                                <span>Google Analytics</span>
+                                <span>Git</span>
+                                <span>Google Analytics</span>
+                                <span>Git</span>
+                                <span>Git</span>
+                                <span>Git</span>
+                                <span>Git</span>
+                                <span>Git</span>
+                                <span>Git</span>
+                                <span>Git</span>
+                                <span>Git</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- portfolioSingle end -->
+    </main>
+    <!-- layout end -->
+    
+
+    <!-- bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const portfolioSlider = new Swiper('.portfolioSlider', {
+            // Optional parameters
+            loop: true,
+            spaceBetween: 0,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+</html>

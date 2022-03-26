@@ -285,6 +285,103 @@
 /* portfolio style end */
 
 
+/* portfolioHeading style start */
+.portfolioHeading {
+    padding: 50px 0;
+    h1 {
+        color: $black;
+    }
+    p {
+        font-weight: 300;
+    }
+    img {
+        transition: all .3s;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+/* portfolioHeading style end */
+
+
+/* project_details style start */
+.portfolioSlider {
+    margin-bottom: 1.5rem;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+.project_details {
+    .description {
+        margin-bottom: 1.5rem;
+        position: relative;
+        padding-top: 10px;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 2px;
+            background: $blue;
+        }
+        h5 {
+            font-weight: 600;
+            color: $black;
+        }
+        p {
+            font-size: 15px;
+            color: $black;
+        }
+        h6 {
+            font-weight: 600;
+            color: $black;
+            a {
+                color: $blue;
+                text-decoration: none;
+                transition: all .2s;
+                font-weight: 500;
+                &:hover {
+                    color: lighten($black, 15%);
+                }
+            }
+            span {
+                font-weight: 400;
+            }
+        }
+    }
+    .technology {
+        position: relative;
+        margin-bottom: 1.5rem;
+        padding-top: 10px;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 80px;
+            height: 2px;
+            background: $blue;
+        }
+        h6 {
+            font-weight: 600;
+            color: $black;
+        }
+        span {
+            display: inline-block;
+            background: $blue;
+            color: $white;
+            font-size: 13px;
+            line-height: 1;
+            padding: .25em .4em;
+            border-radius: .25rem;
+        }
+    }
+}
+/* project_details style end */
+
+
 /* contact start */
 .contactDetails {
     .item {
