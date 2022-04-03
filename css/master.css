@@ -303,6 +303,21 @@ ul {
   width: 100%;
   height: auto;
 }
+.portfolioSlider .swiper-pagination {
+  bottom: 0;
+  padding: 10px 0;
+  background: linear-gradient(to top, rgba(52, 58, 64, 0.5), transparent);
+}
+.portfolioSlider .swiper-pagination .swiper-pagination-bullet {
+  height: 12px;
+  width: 12px;
+  border: 1px solid #ffffff;
+  background: transparent;
+  opacity: 1;
+}
+.portfolioSlider .swiper-pagination .swiper-pagination-bullet-active {
+  background: #ffffff;
+}
 
 .project_details .description {
   margin-bottom: 1.5rem;
